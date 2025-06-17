@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  margin: 20px 0;
+}
+
+h1 {
+  color: #d9534f;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+#puzzle {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-gap: 8px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px;
+  background: #333;
+  border-radius: 10px;
+}
+
+#puzzle button {
+  width: 70px;
+  height: 70px;
+  font-size: 22px;
+  font-weight: bold;
+  background: #ffca28;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px #b78900;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+#puzzle button:hover {
+  background: #ffc107;
+  box-shadow: 0 2px #b78900;
+  transform: translateY(2px);
+}
+
+#puzzle button.empty {
+  background: #ccc;
+  box-shadow: none;
+  cursor: default;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+button#jugar {
+  padding: 8px 16px;
+  font-size: 16px;
+  background: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button#jugar:hover {
+  background: #4cae4c;
+}
+
+footer span {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+#fin {
+  margin-top: 15px;
+  color: #5cb85c;
+  font-weight: bold;
+}
